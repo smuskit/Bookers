@@ -28,7 +28,7 @@ class PostsController < ApplicationController
   	if 	post.update(post_params)
   		flash[:update] = 'Book was successfully updated.'
   		redirect_to post_path(post)
-	else
+	  else
     	render action: :new
     end
   end
